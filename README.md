@@ -21,3 +21,7 @@ You can learn more about the courses here:
 * The default basic auth username and password can be overridden with these properties:
   * `spring.security.user.name`
   * `spring.security.user.password`
+* In test `BeerControllerIT`:
+  * `@WithMockUser("spring")` will bypass authentication and force the test to run with authenticated user 'spring' in the request
+  * `findBeersWithHttpBasic()` will actually do basic authentication against user 'spring' with password 'guru'
+

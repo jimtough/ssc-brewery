@@ -13,8 +13,26 @@ You can learn more about the courses here:
 
 # My own notes (Jim Tough)  :)
 
+## recommended references
+
+* Documentation on Security Filter implementations we can use
+  * https://docs.spring.io/spring-security/site/docs/current/reference/html5/#servlet-security-filters
+
+## configuration
+
+* Take a look at the `SecurityConfig` class under the 'config' package
+  * Note the `@EnableWebSecurity` annotation
+  * Note that we are extending `WebSecurityConfigurerAdapter`
+    * Instructor recommends looking at the Spring implementation of this class and get familiar with the default behaviour of its methods
+    * It is common practice to override individual methods of `WebSecurityConfigurerAdapter` in your application 
+
+## troubleshooting
+
+* Use the 'Inspect' tool in Chrome to view problems when pages or page elements will not load (check 'Network' tab)
+
 ## miscellaneous
 
+* The instructor's example project requires a `mvn package` before running if you want to see all the CSS styling (depends on a Maven plugin)
 * Adding the 'spring-boot-starter-security' starter will automatically enable the following:
   * Basic authentication, with username 'user' and an randomly generated password that will appear in the console log
   * Simple login and logout pages in the application with built-in styling

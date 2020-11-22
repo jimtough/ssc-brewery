@@ -28,6 +28,7 @@ You can learn more about the courses here:
   * Matcher types in `SecurityConfig`
     * Ant Matcher type uses * or ** wildcards
     * MVC Matcher type uses path parameters in Spring MVC syntax (example: {upc})
+  * You can configure your own in-memory store of users/roles with `UserDetailsService` and `InMemoryUserDetailsManager` for testing and demos (not typically used for production)
 
 ## troubleshooting
 

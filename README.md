@@ -25,6 +25,9 @@ You can learn more about the courses here:
   * Note that we are extending `WebSecurityConfigurerAdapter`
     * Instructor recommends looking at the Spring implementation of this class and get familiar with the default behaviour of its methods
     * It is common practice to override individual methods of `WebSecurityConfigurerAdapter` in your application 
+  * Matcher types in `SecurityConfig`
+    * Ant Matcher type uses * or ** wildcards
+    * MVC Matcher type uses path parameters in Spring MVC syntax (example: {upc})
 
 ## troubleshooting
 

@@ -46,4 +46,5 @@ You can learn more about the courses here:
 * In test `BeerControllerIT`:
   * `@WithMockUser("spring")` will bypass authentication and force the test to run with authenticated user 'spring' in the request
   * `findBeersWithHttpBasic()` will actually do basic authentication against user 'spring' with password 'guru'
-
+* Instructor suggests copying either methods from `AbstractAuthenticationProcessingFilter` and pasting a modified version into your own implementation, when you are creating a custom filter.
+  * example: `RestHeaderAuthFilter` - Copy overridden method, then delete code that isn't relevant to a REST service method (like 'remember me' stuff)

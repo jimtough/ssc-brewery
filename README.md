@@ -52,3 +52,4 @@ You can learn more about the courses here:
 * Remember that @Transactional causes Spring to start/end a database transaction at the entry/exit point of the annotated method
   * This may be a better solution than declaring your JPA entity relationships to be 'eager fetch'
 * Take a look at the example of a @Nested test in `BeerRestControllerIT` - good way to segregate a destructive database operation in an integration test
+  * In subsequent lectures the instructor has added more great examples of @Nested and @Parameterized tests that help keep things organized

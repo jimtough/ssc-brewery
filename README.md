@@ -48,3 +48,6 @@ You can learn more about the courses here:
   * `findBeersWithHttpBasic()` will actually do basic authentication against user 'spring' with password 'guru'
 * Instructor suggests copying either methods from `AbstractAuthenticationProcessingFilter` and pasting a modified version into your own implementation, when you are creating a custom filter.
   * example: `RestHeaderAuthFilter` - Copy overridden method, then delete code that isn't relevant to a REST service method (like 'remember me' stuff)
+* If you only implement one `UserDetailsService` bean in your application, then Spring will use it by default
+* Remember that @Transactional causes Spring to start/end a database transaction at the entry/exit point of the annotated method
+  * This may be a better solution than declaring your JPA entity relationships to be 'eager fetch'

@@ -31,6 +31,10 @@ You can learn more about the courses here:
   * You can configure your own in-memory store of users/roles with `UserDetailsService` and `InMemoryUserDetailsManager` for testing and demos (not typically used for production)
 * TIP: As your project gets more complex, method-level security can be easier to manage than configuring global-level security (as in `SecurityConfig.configure()`)
   * The @PreAuthorize method-level security annotation, used with a 'hasAuthority()' SPeL expression allows for a very fine-grained permissions setup that is easy to maintain
+* Spring Security JPA allows you to mix SPeL (to do authority checks) in with JPQL query language
+* To enable Spring Security JPA features, you must do the following:
+  * Add the POM dependency
+  * Declare a `SecurityEvaluationContextExtension` bean in your context (in a @Configuration class typically)
 
 ## troubleshooting
 

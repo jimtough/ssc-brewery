@@ -35,6 +35,9 @@ You can learn more about the courses here:
 * To enable Spring Security JPA features, you must do the following:
   * Add the POM dependency
   * Declare a `SecurityEvaluationContextExtension` bean in your context (in a @Configuration class typically)
+* Spring Security provides a tag library for JSP and Thymeleaf templates
+  * requires a Spring Security 5 Thymeleaf extras dependency in your project
+  * each Thymeleaf template page must have a namespace declaration for the tag library
 
 ## troubleshooting
 

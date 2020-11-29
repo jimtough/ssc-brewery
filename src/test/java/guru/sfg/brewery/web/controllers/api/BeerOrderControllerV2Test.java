@@ -77,7 +77,7 @@ class BeerOrderControllerV2Test extends BaseIT {
                 .andExpect(status().isOk());
     }
 
-
+    
     @Transactional
     @Test
     void getByOrderIdNotAuth() throws Exception {

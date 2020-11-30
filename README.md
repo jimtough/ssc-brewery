@@ -38,6 +38,8 @@ You can learn more about the courses here:
 * Spring Security provides a tag library for JSP and Thymeleaf templates
   * requires a Spring Security 5 Thymeleaf extras dependency in your project
   * each Thymeleaf template page must have a namespace declaration for the tag library
+* 'Remember Me' with persistent tokens requires an application database and specific table structure
+  * Instructor demonstrates how to set this up in one of the lectures
 
 ## troubleshooting
 

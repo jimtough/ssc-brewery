@@ -69,3 +69,4 @@ You can learn more about the courses here:
   * REFERENCE: https://www.docs4dev.com/docs/en/spring-security/5.1.2.RELEASE/reference/overall-architecture.html
 * `StaticResourceLocation` - enum of commonly used static resource locations (ex: "/css/**")
   * See example of how instructor uses this in `Google2faFilter`
+* NOTE: I skipped over the intermediate steps of the CORS lectures in my commits. I just wanted to see the final state with Spring Security enabled.
